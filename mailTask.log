@@ -1,0 +1,15 @@
+2015-11-09 12:16:02   [main] INFO  pl.java.scalatech.config.TestConfig - +++++++++++++ 
+2015-11-09 12:27:44   [main] INFO  pl.java.scalatech.config.TestConfig - +++++++++++++ 
+2015-11-09 12:27:44   [main] INFO  p.j.s.SimpleBeanPropertyTest - ___ +++  SimpleBean(port=489, host=localhost, userName=przodownikR1, password=Slawek_1, date=2015-11-09T12:27:44.384) 
+2015-11-09 12:28:29   [main] INFO  pl.java.scalatech.config.TestConfig - +++++++++++++ conversionService 
+2015-11-09 12:28:29   [main] INFO  p.j.s.SimpleBeanPropertyTest - ___ +++  SimpleBean(port=489, host=localhost, userName=przodownikR1, password=Slawek_1, date=2015-11-09T12:28:29.445) 
+2015-11-09 12:28:46   [main] INFO  pl.java.scalatech.config.TestConfig - +++++++++++++ conversionService 
+2015-11-09 12:28:46   [main] INFO  p.j.s.SimpleBeanPropertyTest - ___ +++  SimpleBean(port=489, host=localhost, userName=przodownikR1, password=Slawek_1, date=2015-11-09T12:28:46.312) 
+2015-11-09 12:29:13   [main] INFO  p.j.s.c.TestConfig$LocalDateTimeToStringConverter - +++ init LocalDateTimeToStringConverter 
+2015-11-09 12:29:13   [main] INFO  p.j.s.c.TestConfig$StringToLocalDateTimeConverter - +++ init StringToLocalDateTimeConverter 
+2015-11-09 12:29:13   [main] INFO  pl.java.scalatech.config.TestConfig - +++++++++++++ conversionService 
+2015-11-09 12:29:13   [main] INFO  p.j.s.SimpleBeanPropertyTest - ___ +++  SimpleBean(port=489, host=localhost, userName=przodownikR1, password=Slawek_1, date=2015-11-09T12:29:13.783) 
+2015-11-09 12:30:11   [main] INFO  p.j.s.c.TestConfig$LocalDateTimeToStringConverter - +++ init LocalDateTimeToStringConverter 
+2015-11-09 12:30:11   [main] INFO  p.j.s.c.TestConfig$StringToLocalDateTimeConverter - +++ init StringToLocalDateTimeConverter 
+2015-11-09 12:30:11   [main] INFO  pl.java.scalatech.config.TestConfig - +++++++++++++ conversionService 
+2015-11-09 12:30:11   [main] INFO  p.j.s.SimpleBeanPropertyTest - ___ +++  SimpleBean(port=489, host=localhost, userName=przodownikR1, password=Slawek_1, date=2015-11-09T12:30:11.239) 

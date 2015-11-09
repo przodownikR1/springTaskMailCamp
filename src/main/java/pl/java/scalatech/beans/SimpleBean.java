@@ -1,6 +1,6 @@
 package pl.java.scalatech.beans;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,6 +17,6 @@ public class SimpleBean {
 
     private String password;
 
-    private LocalDateTime date;
+    private LocalDate date;
 
 }
