@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+
+<bean id="latte" class="pl.java.scalatech.eums.Coffee" factory-method="valueOf">
+     <constructor-arg>
+         <value>LATTE</value>
+     </constructor-arg>
+ </bean>
+
+<bean id="mocha" class="pl.java.scalatech.eums.Coffee" factory-method="valueOf">
+     <constructor-arg>
+         <value>MOCHA</value>
+     </constructor-arg>
+ </bean> 
+ 
+ 
+ <bean id="coffeeMachine" class="pl.java.scalatech.eums.CoffeeMachine" p:coffee="MOCHA"/>
+ 
+ 
+ <util:constant id="espresso"  static-field="pl.java.scalatech.eums.Coffee.ESPRESSO" />
+ 
+</beans>
