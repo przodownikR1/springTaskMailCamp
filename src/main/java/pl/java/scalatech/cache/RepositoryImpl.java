@@ -1,37 +1,41 @@
 package pl.java.scalatech.cache;
 
-import static java.lang.Thread.sleep;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.TimeUnit;
 
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 @Component
 @Slf4j
-public class RepositoryImpl<T,K> implements Repository<T, K>{
+public class RepositoryImpl implements Repository{
 
-    private ConcurrentMap<T, K> store = new ConcurrentHashMap<>();
+    private ConcurrentMap<Long, Car> store = new ConcurrentHashMap<>();
     
     @Override
     @SneakyThrows
-    public K get(T key) {
+    @Cacheable(value="store",key="#key")
+    public Car get(long key) {
         SECONDS.sleep(5);
         return store.get(key);
     }
 
     @Override
-    public void put(T key, K value) {
-           store.putIfAbsent(key, value);
+    @CachePut(value="store",key="#value.id")
+    public void put(Car value) {
+        store.putIfAbsent(value.getId(), value);
         
     }
 
     @Override
-    public void delete(T key) {
+    @CacheEvict(value="store",key="#key")
+    public void delete(long key) {
         store.remove(key);
         
     }

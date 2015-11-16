@@ -1,11 +1,11 @@
 package pl.java.scalatech.cache;
 
-public interface Repository<T, K> {
+public interface Repository {
 
-    K get(T key);
+    Car get(long id);
 
-    void put(T key,K value);
+    void put(Car value);
 
-    void delete(T key);
+    void delete(long id);
 
 }
