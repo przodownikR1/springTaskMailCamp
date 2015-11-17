@@ -1,11 +1,15 @@
 package pl.java.scalatech.cache;
 
+import java.util.Collection;
+
 public interface Repository {
 
-    Car get(long id);
+    Car get(Long id);
 
-    void put(Car value);
+    Car put(Car value);
 
-    void delete(long id);
+    void delete(Long id);
+
+    Collection<Car> getAll();
 
 }
