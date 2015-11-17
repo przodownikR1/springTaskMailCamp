@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Car implements StoreKey{
+public class Car {
   private Long id;
   private String name;
 }
